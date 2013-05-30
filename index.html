@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>NISG</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="http://fonts.googleapis.com/css?family=Copse" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section id="header">
+      <div class="right">
+        <!-- <input type="text" placeholder="Search uni.edu/nisg" /> -->
+      </div>
+
+      <div id="main-logo">
+        <div id="icons">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="nav-images/black/cat-sign.png" id="nav-cat" /><br />
+                Government
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="nav-images/black/man-sign.png" id="nav-man" /><br />
+                Organizations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="nav-images/black/house-sign.png" id="nav-house" /><br />
+                Initiatives
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="nav-images/black/at-sign.png" id="nav-at" /><br />
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <img src="logo-gray.png" id="main-logo-image" />
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="right" style="max-width: 30%;">
+        <div id="upcoming-events">
+          <h2>Upcoming Events</h2>
+
+          <div class="event">
+            <span class="event-title">
+              Civil rights icon Angela Davis will visit UNI
+            </span><br /><br />
+            Angela Davis will discuss "Finding Your Way: Organizing for Social Change and Human Rights,"  at 7 p.m., Nov. 7, in the Great Hall of the GBPAC.
+          </div>
+          <br />
+          <div class="event">
+            <span class="event-title">
+              Students excel on athletic training exam
+            </span><br /><br />
+            UNI athletic training students had a 100 percent pass rate on the Board of Certification exam in April, beating the national average of 70 percent.
+          </div>
+        </div>
+      </div>
+
+      <img src="#" id="content-banner" />
+    </section>
+
+    <br /><br /><br />
+
+    <section id="content-2">
+      <div id="twitter-content">
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+          new TWTR.Widget({
+            version: 2,
+            type: 'search',
+            search: 'from:uninews',
+            interval: 30000,
+            title: 'NISG - Northern Iowa Student Government',
+            subject: '',
+            width: 316,
+            height: 200,
+            theme: {
+              shell: {
+                background: '#4B116F',
+                color: '#ffffff'
+              },
+              tweets: {
+                background: '#ffffff',
+                color: '#000000',
+                links: '#4b116f'
+              }
+            },
+            features: {
+              scrollbar: true,
+              loop: false,
+              live: true,
+              behavior: 'all'
+            }
+          }).render().start();
+        </script>
+      </div>
+
+      <div id="about-text">
+        We work to serve you through things like <a href="#">SafeRide</a>, and the
+        <a href="#">Housing List</a>.
+        <br /><br />
+        For your student organization we have
+        <a href="#">Funding Sources</a> and so much more..
+      </div>
+    </section>
+
+    <section id="footer">
+      <a href="#">Presidential Search</a> |
+      <a href="#">UNI Home</a> |
+      <a href="#">Cats</a>
+    </section>
+
+    <script>
+      var banners = [
+      "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/525440_466426823425447_2096369279_n.jpg",
+      "https://sphotos-a.xx.fbcdn.net/hphotos-frc3/389058_472637542804375_1061742169_n.jpg",
+      "https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/947056_472638722804257_94989783_n.jpg",
+      "https://sphotos-a.xx.fbcdn.net/hphotos-frc1/575477_472639352804194_833066070_n.jpg",
+      "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/247472_472639362804193_1019983277_n.jpg",
+      "https://sphotos-b.xx.fbcdn.net/hphotos-ash3/526878_461284940606302_76253960_n.jpg"
+      ];
+
+      function getRandomInt(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function rotate_banners() {
+          var banner = document.querySelector("#content-banner");
+          var index = getRandomInt(0, banners.length - 1);
+          banner.src = banners[index];
+
+          setInterval(function() {
+             var index = getRandomInt(0, banners.length - 1);
+             banner.src = banners[index];
+          }, 3000);
+      }
+
+      rotate_banners();
+    </script>
+  </body>
+</html>

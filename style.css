@@ -1,0 +1,145 @@
+/**
+ * NISG Site Design
+ */
+
+a {
+    color: #4b116f;
+}
+
+body {
+    background-color: #EEE;
+    width: 80%;
+    margin-left: 10%;
+}
+
+div.right {
+    float: right;
+    margin-top: 13%;
+}
+
+section#header {
+    border-bottom: 1px solid #000;
+    height: 200px;
+    width: 100%;
+}
+
+img#main-logo-image {
+    height: 160px;
+    width: 218px;
+}
+
+div#icons {
+    float: right;
+    height: 160px;
+    margin-top: 1%;
+    width: 77%;
+}
+
+#nav-cat:hover {
+    content: url('nav-images/purple/cat-sign.png');
+}
+
+#nav-man:hover {
+    content: url('nav-images/purple/man-sign.png');
+}
+
+#nav-house:hover {
+    content: url('nav-images/purple/house-sign.png');
+}
+
+#nav-at:hover {
+    content: url('nav-images/purple/at-sign.png');
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    width: 180px;
+}
+
+div#icons ul li {
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 16pt;
+    text-align: center;
+}
+
+div#icons ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+div#icons ul li img {
+    height: 90px;
+    width: 90px;
+}
+
+section#content {
+    padding: 10px;
+}
+
+img#content-banner {
+    border-radius: 5px;
+    height: 300px;
+    width: 700px;
+}
+
+div#upcoming-events {
+    margin-top: -130px;
+    padding: 10px;
+    text-algin: center;
+}
+
+div#upcoming-events h2 {
+    font-family: Helvetica;
+    margin-top: 0px;
+    text-align: center;
+}
+
+div#upcoming-events div.event {
+    background-color: #4b116f;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Helvetica;
+    min-height: 60px;
+    min-width: 300px;
+    padding: 7px;
+}
+
+div#upcoming-events span.event-title {
+    font-family: Helvetica;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+section#content-2 {
+    display: block;
+}
+
+div#twitter-content {
+    float: right;
+}
+
+div#about-text {
+    font-family: 'Copse';
+    font-size: 38pt;
+    text-rendering: optimizelegibility;
+    /* text-transform: capitalize; */
+    width: 70%;
+}
+
+div#about-text a {
+    color: #4b116f;
+}
+
+section#footer {
+    bottom: 3px;
+    padding: 10px;
+}
+
+section#footer a {
+    color: #000;
+}
