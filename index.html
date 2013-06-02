@@ -49,20 +49,25 @@
       <div class="right" style="max-width: 30%;">
         <div id="upcoming-events">
           <h2>Upcoming Events</h2>
-
-          <div class="event">
             <span class="event-title">
               Civil rights icon Angela Davis will visit UNI
-            </span><br /><br />
+            </span>
             Angela Davis will discuss "Finding Your Way: Organizing for Social Change and Human Rights,"  at 7 p.m., Nov. 7, in the Great Hall of the GBPAC.
-          </div>
-          <br />
-          <div class="event">
+          <br /> <br />
             <span class="event-title">
               Students excel on athletic training exam
-            </span><br /><br />
+            </span>
             UNI athletic training students had a 100 percent pass rate on the Board of Certification exam in April, beating the national average of 70 percent.
-          </div>
+            <br /> <br />
+            <span class="event-title">
+              Brogramming
+              </span> <br />
+              Computer Science student Adam Shannon speaks how on to be a badass brogrammer at 10 p.m., June 19th, in his Cedar Falls apartment.
+            <br /> <br />
+            <span class="event-title">
+              Stef McGraw Attempts to Program
+              </span> <br />
+            Inspired by brogramming master Adam Shannon, liberal arts student Stef McGraw makes a messy attempt at coding this website.
         </div>
       </div>
 
@@ -83,7 +88,7 @@
             title: 'NISG - Northern Iowa Student Government',
             subject: '',
             width: 316,
-            height: 200,
+            height: 600,
             theme: {
               shell: {
                 background: '#4B116F',
@@ -106,12 +111,11 @@
       </div>
 
       <div id="about-text">
-        We work to serve you through things like <a href="#">SafeRide</a>, and the
+       The Northern Iowa Student Government exists to serve students. Some of our initiatives include the <a href="#">SafeRide</a>, Voterpalooza, and the
         <a href="#">Housing List</a>.
         <br /><br />
-        For your student organization we have
-        <a href="#">Funding Sources</a> and so much more..
-      </div>
+        For your student organization, we have
+        <a href="#">Funding Sources</a>, leadership opportunities, free chalk, and so much more! If you have any questions, feel free to reach us at nisg [at] uni [dot] edu or visit our temporary office in the Oak Room of Maucker Union.
     </section>
 
     <section id="footer">
@@ -147,5 +151,12 @@
 
       rotate_banners();
     </script>
+    <script>
+      var innerheight = window.innerHeight;
+      var navheight = document.querySelector("#header");
+      document.querySelector("#content-banner").style.height = innerheight-200;
+      console.log(navheight);
+    </script>
+
   </body>
 </html>

@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    background-color: #FFE;
+    background-color: #f7f2fa;
     width: 80%;
     margin-left: 10%;
 }
@@ -79,18 +79,25 @@ div#icons ul li img {
 
 section#content {
     padding: 10px;
+
 }
 
 img#content-banner {
     border-radius: 5px;
-    height: 300px;
     width: 700px;
+    padding-top: 15px;
+
+
 }
 
 div#upcoming-events {
     margin-top: -130px;
     padding: 10px;
     text-algin: center;
+    height: 500px;
+    color: #525252;
+    font-family: copse;
+
 }
 
 div#upcoming-events h2 {
@@ -105,20 +112,13 @@ div#upcoming-events h2 {
     text-align: center;
 }
 
-div#upcoming-events div.event {
-    background-color: #4b116f;
-    border-radius: 5px;
-    color: #FFF;
-    font-family: Helvetica;
-    min-height: 60px;
-    min-width: 300px;
-    padding: 7px;
-}
-
 div#upcoming-events span.event-title {
     font-family: Helvetica;
     font-size: 11pt;
     font-weight: bold;
+    color: #4b116f;
+
+
 }
 
 section#content-2 {
@@ -131,10 +131,12 @@ div#twitter-content {
 
 div#about-text {
     font-family: 'Copse';
-    font-size: 38pt;
+    font-size: 30pt;
     text-rendering: optimizelegibility;
     /* text-transform: capitalize; */
     width: 70%;
+    color:#525252;
+
 }
 
 div#about-text a {
