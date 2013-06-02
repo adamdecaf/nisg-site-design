@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    background-color: #EEE;
+    background-color: #FFE;
     width: 80%;
     margin-left: 10%;
 }
@@ -19,7 +19,7 @@ div.right {
 
 section#header {
     border-bottom: 1px solid #000;
-    height: 200px;
+    height: 170px;
     width: 100%;
 }
 
@@ -94,8 +94,14 @@ div#upcoming-events {
 }
 
 div#upcoming-events h2 {
+    background-color: #4b116f;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #FFF;
     font-family: Helvetica;
     margin-top: 0px;
+    padding: 15px;
+    min-width: 280px;
     text-align: center;
 }
 
